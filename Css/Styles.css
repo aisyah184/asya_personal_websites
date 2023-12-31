@@ -1,0 +1,309 @@
+/*Homepage*/
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: candara;
+	box-sizing: border-box;
+}
+.background-image
+body
+{
+	height: vh;
+	width: 75px;
+	background-image: url(Pic/me.1jpeg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+}
+.navbar
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: slategray;
+	position: sticky;
+	top: 0;
+}
+.navbar 
+ul
+{
+	display: flex;
+	list-style: none;
+	margin: 20px 0px;
+}
+.navbar 
+ul li
+{
+	font-family: century;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.navbar
+ ul li a
+{
+	text-decoration: none;
+	color: white ;
+	padding: 8px 25px;
+	transition: all .5s ease;
+}
+.navbar
+ul li a:hover
+{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+.content
+{
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translateY(-50%);
+	color: white;
+}
+h1
+{
+	color: black;
+	font-size: 35px;
+	margin: 20px 0px 20px;
+}
+h4
+{
+	color: black;
+	letter-spacing: 2px;
+}
+/*Biodata*/
+h2
+{
+	text-align: center;
+	font-size: 25px;
+	color: black;
+
+}
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.table1
+table1, tr, th, td
+{
+	border: 2px solid coral;
+	border-collapse: collapse;
+	text-decoration: none;
+	float: center;
+
+}
+th, td
+{
+	padding: 10px;
+}
+th
+{
+	background-color: brown ;
+	color: beige ;
+}
+td
+{
+	text-align: center;
+}
+tr:nth-child(even)
+{
+	background-color: darksalmon;
+}
+tr:nth-child(odd)
+{
+	background-color: goldenrod;
+}
+td:hover
+{
+	background-color: darkkhaki ;
+}
+.background-color
+{
+	background-color: grey;
+}
+/*.Education*/
+h3
+{
+    text-align: center;
+	font-size: 25px;
+	color: black;
+	font-style: oblique;
+}
+/*.Experience*/
+p
+{
+	text-align: justify-all;
+}
+/*.Family*/
+.table2 
+table2, tr, th, td
+{
+	border: 2px solid coral;
+	border-collapse: collapse;
+	text-decoration: none;
+	float: center;
+	height: 15%;
+
+}
+th, td
+{
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+th
+{
+	background-color: brown ;
+	color: white ;
+	width: 50%;
+	
+}
+td
+{
+	text-align: center;
+	background-color: darksalmon;
+}
+img
+{
+	max-width: 100%;
+    max-height: 100%;
+}
+/*Galery*/
+body 
+{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+.mySlides
+{
+	display: none;
+	text-align: center;
+}
+
+.mySlides img
+{
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 30px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

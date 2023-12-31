@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Gallery</title>
+    <link rel="stylesheet" type="text/css" href="Css/Styles.css">
+
+    <style>
+		body
+		{
+			background-image: url(Pic/bg_bio.png);
+		}
+	</style>
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html">HOMEPAGE</a></li>
+            <li><a href="Biodata.html">BIODATA</a></li>
+            <li><a href="Education.html">EDUCATION</a></li>
+            <li><a href="Experience.html">EXPERIENCE</a></li>
+            <li><a href="Family.html">FAMILY</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="Contact_me.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <iframe src="https://free.timeanddate.com/clock/i968ll69/n5090/tlmy/fn6/fs16/fc9ff/tc000/ftbi/bas2/bat1/bacfff/pa8/tt0/th1/ta1/tb4" frameborder="0" width="1318" height="60"></iframe>
+
+    <audio controls autoplay>
+    <source src="Music/Instrumental.mp3" type="Audio/mpeg">
+  </audio>
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img src="Pic/2.jpeg" style="width:33% ;" "height:34% ;">
+    <img src="Pic/0.jpg" style="width:33%" "height: 34%;">
+    <img src="Pic/5.jpeg" alt="Thailand" style="width: 30%" "height: 34%;">  
+   </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="Pic/6.jpg" style="width:33%" "height: 34%;">
+     <img src="Pic/8.jpg" style="width:33%" "height: 34%;">
+      <img src="Pic/9.jpg" alt="Langkawi" style="width:33%" "height: 34%;">
+  </div>
+
+  <div>
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+   <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img src="Pic/10.jpg" style="width:33%" "height: 34%;">
+     <img src="Pic/11.jpg" style="width:33%" "height: 34%;">
+      <img src="Pic/12.jpg" alt="Diploma"style="width:33%" "height: 34%;">
+  </div>
+
+
+   <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+     <img src="Pic/13.jpg" style="width:33%" "height: 34%;">
+      <img src="Pic/14.jpg" style="width:33%" "height: 34%;">
+       <img src="Pic/15.jpg" alt="Degree"style="width:33%" "height: 34%;">
+  </div>
+
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+    <center><div class="row"> 
+     <div class="column"> 
+      <img class="demo cursor" src="Pic/2.jpeg" src="Pic/0.jpg" src="Pic/5.jpeg" style="width:auto;" "height: auto;" onclick="currentSlide(1)" 
+         <img class="demo cursor" src="Pic/0.jpg" style="width:auto;" "height: auto;" onclick="currentSlide(1)">
+        <img class="demo cursor" src="Pic/5.jpeg" style="width:auto;" "height: auto;" onclick="currentSlide(1)">
+    </div>
+
+     <div class="column">
+      <img class="demo cursor" src="Pic/6.jpg" src="Pic/8.jpg" src="Pic/9.jpg" style="width: auto;" "height: auto;" onclick="currentSlide(2)" 
+      <img class="demo cursor" src="Pic/8.jpg" style="width: auto;" "height: auto;" onclick="currentSlide(2)">
+       <img class="demo cursor" src="Pic/9.jpg" style="width: auto;" "height: auto;" onclick="currentSlide(2)">
+     </div>
+   
+     <div class="column">
+      <img class="demo cursor" src="Pic/10.jpg" src="Pic/11.jpg" src="Pic/12.jpg"style="width:auto" "height: auto;" onclick="currentSlide(3)" 
+       <img class="demo cursor" src="Pic/11.jpg" style="width:auto" "height: auto;" onclick="currentSlide(3)">
+       <img class="demo cursor" src="Pic/12.jpg" style="width:auto" "height: auto;" onclick="currentSlide(3)">            
+     </div>
+
+    <div class="column">
+      <img class="demo cursor" src="Pic/13.jpg" src="Pic/14.jpg" src="Pic/15.jpg"style="width: auto;" "height: auto;" onclick="currentSlide(4)" 
+      <img class="demo cursor" src="Pic/14.jpg" style="width: auto;" "height: auto;" onclick="currentSlide(4)">
+       <img class="demo cursor" src="Pic/15.jpg" style="width: auto;" "height: auto;" onclick="currentSlide(4)"> 
+
+
+    </div>
+  </div>
+</div></center>
+ 
+   <script>
+let slideIndex = 1;
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>
